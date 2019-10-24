@@ -1,0 +1,1299 @@
+@import '../stylesheets/variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800,300');
+
+.ImageHover {
+  min-height: 575px !important;
+
+  h4 {
+    font-size: $font-lg;
+  }
+
+  p.job-title {
+    padding: 0 !important;
+    word-spacing: normal !important;
+    font-weight: bold;
+  }
+
+  .grid figure p {
+    font-size: 1.1rem;
+  }
+
+  figure {
+    .image::before {
+      //content: "";
+      //position: absolute;
+      //top: 32px;
+      //overflow: hidden;
+      //background-image: inherit;
+      //background-attachment: fixed;
+      //background-size: 26%;
+      //background-repeat: no-repeat;
+      //background-position: 9.8% -23%;
+      //width: 285px;
+      //left: 19px;
+      //height: 70px;
+      //filter: blur(91px);
+      content: "";
+      position: absolute;
+      top: 32px;
+      overflow: hidden;
+      width: 285px;
+      left: 19px;
+      height: 70px;
+      filter: blur(60px);
+      background-color: rgba(0,0,0,.4);
+
+    }
+
+    figcaption h4 {
+      //background: rgba(0, 0, 0, 0.1);
+      //box-shadow: 0px -30px 30px 0px rgba(0, 0, 0, 0.05), 30px 0px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 30px 0px rgba(0, 0, 0, 0.05), -30px 0px 30px 0px rgba(0, 0, 0, 0.05);
+      //padding: 10px;
+    }
+  }
+
+
+  &.text-bottom {
+
+    figure.effect-ruby {
+      h4 {
+        bottom: 30px;
+        position: absolute;
+        width: 200px;
+        left: 50%;
+        transition: transform 0.35s;
+        transform: translate3d(-50%,-20px,0);
+      }
+
+      &:hover {
+        h4 {
+          transform: translate3d(-50%,0,0);
+        }
+      }
+    }
+
+  }
+
+  .grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    //max-width: 1000px;
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    //width: 450px;
+  }
+
+  /* Common style */
+  .grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    //margin: 10px 1%;
+    //min-width: 320px;
+    //max-width: 480px;
+    //max-height: 360px;
+    //width: 48%;
+    width: 100%;
+    height: 100%;
+    //background: #3085a3;
+    text-align: center;
+    //cursor: pointer;
+
+    & > div {
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .image {
+      position: relative;
+      display: block;
+      min-height: 100%;
+      max-width: 100%;
+      opacity: 0.8;
+    }
+
+    figcaption {
+      padding: 2em;
+      color: $brand-white;
+      //text-transform: uppercase;
+      font-size: 1.25em;
+      backface-visibility: hidden;
+
+      &::before,
+      &::after {
+        pointer-events: none;
+      }
+
+      &,
+      & > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Anchor will cover the whole item by default */
+      /* For some effects it will show as a button */
+      & > a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
+    }
+
+    h4 {
+      //word-spacing: -0.15em;
+      font-weight: 300;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 800;
+      }
+    }
+
+    h4,
+    p {
+      margin: 0;
+      cursor: default;
+    }
+
+    p {
+      letter-spacing: 1px;
+      //font-size: 68.5%;
+    }
+  }
+
+
+
+  /* Individual effects */
+
+  /*---------------*/
+  /***** Lily *****/
+  /*---------------*/
+
+  figure.effect-lily {
+    .image {
+      max-width: none;
+      width: calc(100% + 50px);
+      opacity: 0.7;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-40px,0,0);
+    }
+
+    figcaption {
+      text-align: left;
+
+      & > div {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2em;
+        width: 100%;
+        height: 50%;
+      }
+    }
+
+    h4,
+    p {
+      transform: translate3d(0,40px,0);
+    }
+
+    h4 {
+      transition: transform 0.35s;
+    }
+
+    p {
+      color: rgba(255,255,255,0.8);
+      opacity: 0;
+      transition: opacity 0.2s, transform 0.35s;
+    }
+
+    &:hover {
+      .image,
+      p {
+        opacity: 1;
+      }
+
+      .image,
+      h4,
+      p {
+        transform: translate3d(0,0,0);
+      }
+
+      p {
+        transition-delay: 0.05s;
+        transition-duration: 0.35s;
+      }
+
+    }
+  }
+
+
+  /*---------------*/
+  /***** Sadie *****/
+  /*---------------*/
+
+  figure.effect-sadie {
+    figcaption::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      //background: linear-gradient(top, rgba(43,48,57,0) 0%, rgba(43,48,57,0.8) 75%);
+      background: linear-gradient(to bottom, rgba(2,34,34,0) 0%, rgba(2,34,34,0.8) 75%);
+      content: '';
+      opacity: 0;
+      transform: translate3d(0,50%,0);
+    }
+
+    h4 {
+      position: absolute;
+      //top: 50%;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      color: $brand-white;
+      //transition: transform 0.35s, color 0.35s;
+      transition: opacity 0.35s, color 0.35s;
+      transform: translate3d(0,-50%,0);
+    }
+
+    figcaption::before,
+    p {
+      transition: opacity 0.35s, transform 0.35s;
+    }
+
+    p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 2em;
+      width: 100%;
+      opacity: 0;
+      transform: translate3d(0,10px,0);
+    }
+
+    &:hover {
+      h4 {
+        color: $brand-white;
+        //transform: translate3d(0,0,0) translate3d(0,-40px,0);
+        //opacity: 0;
+
+        p {
+          transform: translate3d(0, 20px, 0);
+        }
+      }
+
+      figcaption::before ,
+      p {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Roxy *****/
+  /*---------------*/
+
+  figure.effect-roxy {
+    //background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+    background: linear-gradient(45deg, $dark-pink 0%,$dark-blue 100%);
+
+    .image {
+      max-width: none;
+      width: calc(100% + 60px);
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-50px,0,0);
+    }
+
+    figcaption {
+      padding: 3em;
+      text-align: left;
+
+      &::before {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        border: 1px solid $brand-white;
+        content: '';
+        opacity: 0;transition: opacity 0.35s, transform 0.35s;transform: translate3d(-20px,0,0);
+      }
+    }
+
+    h4 {
+      //padding: 30% 0 10px 0;
+      padding: 0 0 10px 0;
+    }
+
+    p {
+      opacity: 0;transition: opacity 0.35s, transform 0.35s;transform: translate3d(-10px,0,0);
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.7;transform: translate3d(0,0,0);
+      }
+
+      figcaption::before,
+      p {
+        opacity: 1;transform: translate3d(0,0,0);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Bubba *****/
+  /*---------------*/
+
+  figure.effect-bubba {
+    //background: #9e5406;
+
+    .image {
+      opacity: 0.7;transition: opacity 0.35s;
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.4;
+      }
+    }
+
+    figcaption {
+      &::before,
+      &::after {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        content: '';
+        opacity: 0;transition: opacity 0.35s, transform 0.35s;
+      }
+
+      &::before {
+        border-top: 1px solid $brand-white;
+        border-bottom: 1px solid $brand-white;
+        transform: scale(0,1);
+      }
+
+      &::after {
+        border-right: 1px solid $brand-white;
+        border-left: 1px solid $brand-white;
+        transform: scale(1,0);
+      }
+    }
+
+    h4 {
+      padding-top: 30%;
+      transition: transform 0.35s;
+      transform: translate3d(0,-20px,0);
+    }
+
+    p {
+      padding: 20px 2.5em;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(0,20px,0);
+    }
+
+    &:hover {
+      figcaption::before,
+      figcaption::after {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      h4,
+      p {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Romeo *****/
+  /*---------------*/
+
+  figure.effect-romeo {
+    perspective: 1000px;
+
+    .image {
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(0,0,300px);
+    }
+
+    figcaption {
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        height: 1px;
+        background: $brand-white;
+        content: '';transition: opacity 0.35s, transform 0.35s;transform: translate3d(-50%,-50%,0);
+      }
+    }
+
+    h4,
+    p {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transition: transform 0.35s;
+    }
+
+    h4 {
+      transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+    }
+
+    p {
+      padding: 0.25em 2em;
+      transform: translate3d(0,0,0) translate3d(0,150%,0);
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.6;
+        transform: translate3d(0,0,0);
+      }
+
+      figcaption::before {
+        opacity: 0.5;
+        transform: translate3d(-50%,-50%,0) rotate(45deg);
+      }
+
+      figcaption::after {
+        opacity: 0.5;
+        transform: translate3d(-50%,-50%,0) rotate(-45deg);
+      }
+
+      h4 {
+        transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+
+        p {
+          transform: translate3d(0,-80%,0) translate3d(0,-100%,0);
+        }
+      }
+
+      p {
+        //transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+        transform: translate3d(0,-80%,0) translate3d(0,100%,0);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Layla *****/
+  /*---------------*/
+
+  figure.effect-layla {
+    //background: #18a367;
+
+    .image {
+      height: 390px;
+    }
+
+    figcaption {
+      padding: 3em;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        opacity: 0;
+      }
+
+      &::before {
+        top: 50px;
+        right: 30px;
+        bottom: 50px;
+        left: 30px;
+        border-top: 1px solid $brand-white;
+        border-bottom: 1px solid $brand-white;transform: scale(0,1);transform-origin: 0 0;
+      }
+
+      &::after {
+        top: 30px;
+        right: 50px;
+        bottom: 30px;
+        left: 50px;
+        border-right: 1px solid $brand-white;
+        border-left: 1px solid $brand-white;transform: scale(1,0);transform-origin: 100% 0;
+      }
+    }
+
+    h4 {
+      padding-top: 26%;transition: transform 0.35s;
+    }
+
+    p {
+      padding: 0.5em 2em;
+      text-transform: none;
+      opacity: 0;transform: translate3d(0,-10px,0);
+    }
+
+    .image,
+    h4 {
+      transform: translate3d(0,-30px,0);
+    }
+
+
+    .image,
+    figcaption::before,
+    figcaption::after,
+    p {
+      transition: opacity 0.35s, transform 0.35s;
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.7;
+        transform: translate3d(0,0,0);
+      }
+
+      figcaption::before,
+      figcaption::after {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      h4,
+      p {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+
+      figcaption::after,
+      h4,
+      p,
+      .image {
+        transition-delay: 0.15s;
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Honey *****/
+  /*---------------*/
+
+  figure.effect-honey {
+    //background: #4a3753;
+
+    .image {
+      opacity: 0.9;
+      transition: opacity 0.35s;
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.5;
+      }
+
+      figcaption::before,
+      h4,
+      h4 i {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    figcaption::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: $brand-white;
+      content: '';
+      transform: translate3d(0, 10px, 0);
+    }
+
+    h4 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 1em 1.5em;
+      width: 100%;
+      text-align: left;
+      transform: translate3d(0, -30px, 0);
+    }
+
+    h4 i {
+      font-style: normal;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(0, -30px, 0);
+    }
+
+    figcaption::before,
+    h4 {
+      transition: transform 0.35s;
+    }
+  }
+
+
+  /*---------------*/
+  /***** Oscar *****/
+  /*---------------*/
+
+  figure.effect-oscar {
+    //background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+    background: linear-gradient(45deg, $dark-blue 0%,$dark-blue 40%,$dark-pink 100%);
+
+    .image {
+      opacity: 0.9;transition: opacity 0.35s;
+    }
+
+    figcaption {
+      padding: 3em;
+      background-color: rgba(58,52,42,0.3);
+      transition: background-color 0.35s;
+    }
+
+    figcaption::before {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      bottom: 30px;
+      left: 30px;
+      border: 1px solid $brand-white;
+      content: '';
+    }
+
+    h4 {
+      margin: 20% 0 10px 0;
+      transition: transform 0.35s;transform: translate3d(0,100%,0);
+    }
+
+    figcaption::before,
+    p {
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: scale(0);
+    }
+
+    &:hover {
+      h4 {
+        transform: translate3d(0,0,0);
+      }
+
+      figcaption::before,
+      p {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      figcaption {
+        background-color: rgba(58,52,42,0);
+      }
+
+      .image {
+        opacity: 0.4;
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Marley *****/
+  /*---------------*/
+
+  figure.effect-marley {
+    transition: background-color 0.35s;
+
+    figcaption {
+      text-align: right;
+    }
+
+    .image {
+      transition: opacity 0.35s;
+      opacity: 1;
+    }
+
+    h4,
+    p {
+      position: absolute;
+      right: 30px;
+      left: 30px;
+      padding: 10px 0;
+    }
+
+
+    p {
+      bottom: 15px;
+      line-height: 1.5;
+      transform: translate3d(0,100%,0);
+
+      &.job-title {
+        padding: 10px 0 !important;
+        bottom: 30px;
+      }
+    }
+
+    h4 {
+      top: 30px;
+      transition: transform 0.35s, color 0.35s;
+      transform: translate3d(0,20px,0);
+    }
+
+    h4::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $brand-white;
+      content: '';
+      transform: translate3d(0,40px,0);
+    }
+
+    h4::after,
+    p {
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+    }
+
+    &:hover {
+      background-color: $dark-blue;
+
+      .image {
+        opacity: .65;
+      }
+
+      h4::after,
+      p {
+        opacity: 1;
+        transform: translate3d(0, -13px, 0);
+      }
+
+      h4 {
+        transform: translate3d(0,0,0);
+        color: white;
+      }
+    }
+
+  }
+
+
+  /*---------------*/
+  /***** Ruby *****/
+  /*---------------*/
+
+  figure.effect-ruby {
+    //background-color: #17819c;
+
+    .image {
+      opacity: 0.7;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: scale(1.15);
+    }
+
+    h4 {
+      //margin-top: 20%;transition: transform 0.35s;transform: translate3d(0,20px,0);
+    }
+
+    p {
+      //margin: 1em 0 0;
+      margin: 20px 0 0;
+      //padding: 3em;
+      padding: 15px;
+      //border: 1px solid $brand-white;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(0,20px,0) scale(1.1);
+      font-size: 1.25rem;
+    }
+
+    figcaption {
+      padding: 2em 1em;
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.5;
+        transform: scale(1);
+      }
+
+      h4 {
+        transform: translate3d(0,0,0);
+      }
+
+      p {
+        opacity: 1;
+        transform: translate3d(0,0,0) scale(1);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Milo *****/
+  /*---------------*/
+
+  figure.effect-milo {
+    background: #2e5d5a;
+
+    .image {
+      max-width: none;
+      width: calc(100% + 60px);
+      opacity: 1;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-30px,0,0) scale(1.12);
+      backface-visibility: hidden;
+    }
+
+    h4 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 1em 1.2em;
+    }
+
+    p {
+      padding: 0 10px 0 0 !important;
+      width: 50%;
+      border-right: 1px solid $brand-white;
+      text-align: right;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-40px,0,0);
+    }
+
+    &:hover {
+      p {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+
+      .image {
+        opacity: 0.5;
+        transform: translate3d(0,0,0) scale(1);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Dexter *****/
+  /*---------------*/
+
+  figure.effect-dexter {
+    //background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(3,245,249,.5) 0%,rgba(245,14,240,.5) 100%);
+
+    .image {
+      transition: opacity 0.35s;
+    }
+
+    figcaption {
+      //padding: 3em;
+      padding: 25px;
+      text-align: left;
+
+      &::after {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;height: calc(50% - 30px);
+        border: 7px solid $brand-white;
+        content: '';
+        transition: transform 0.35s;
+        transform: translate3d(0,-100%,0);
+      }
+    }
+
+    p {
+      position: absolute;
+      right: 60px;
+      bottom: 60px;
+      left: 60px;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(0,-100px,0);
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.4;
+      }
+
+      div p {
+        opacity: 1;
+        //transform: translate3d(0,0,0);
+        transform: translate3d(0, -20px, 0);
+      }
+
+      h4 p {
+        transform: translate3d(0,0,0);
+      }
+
+      figcaption::after {
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Sarah *****/
+  /*---------------*/
+
+  figure.effect-sarah {
+    //background: #42b078;
+    transition: background-color 0.35s;
+
+    .image {
+      max-width: none;width: calc(100% + 20px);
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-10px,0,0);
+      backface-visibility: hidden;
+      opacity: 1;
+    }
+
+    figcaption {
+      text-align: left;
+    }
+
+    h4 {
+      position: relative;
+      overflow: hidden;
+      padding: 0.5em 0;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $brand-white;
+        content: '';
+        transition: transform 0.35s;
+        transform: translate3d(-100%,0,0);
+      }
+    }
+
+    p {
+      padding: 1em 0;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(100%,0,0);
+    }
+
+    &:hover {
+      background-color: $dark-blue;
+
+      p {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+
+      h4::after {
+        transform: translate3d(0,0,0);
+      }
+
+      .image {
+        opacity: 0.4;
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
+
+
+  /*---------------*/
+  /***** Zoe *****/
+  /*---------------*/
+
+  figure.effect-zoe {
+
+    figcaption {
+      top: auto;
+      bottom: 0;
+      padding: 1em;
+      //height: 3.75em;
+      height: auto;
+      background: $brand-white;
+      color: $brand-gray;
+      transition: transform 0.35s;
+      transform: translate3d(0,100%,0);
+    }
+
+    h4 {
+      float: left;
+      margin-right: 5px;
+      font-size: $font-md;
+    }
+
+    p {
+      .icon-links a {
+        float: right;
+        color: $brand-gray;
+        font-size: 1.4em;
+
+        span::before {
+          display: inline-block;
+          padding: 8px 10px;
+          font-family: 'feathericons';
+          speak: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+
+      .description {
+        position: absolute;
+        bottom: 8em;
+        padding: 2em;
+        color: $brand-white;
+        text-transform: none;
+        font-size: 90%;
+        opacity: 0;
+        transition: opacity 0.35s;
+      }
+
+    }
+
+    h4,
+    p.icon-links a {
+      transition: transform 0.35s;
+      transform: translate3d(0,200%,0);
+    }
+
+    .icon-eye::before {
+      content: '\e000';
+    }
+
+    .icon-paper-clip::before {
+      content: '\e001';
+    }
+
+    .icon-heart::before {
+      content: '\e024';
+    }
+
+    h4 {
+      display: inline-block;
+    }
+
+    &:hover {
+      p {
+        .icon-links a:hover,
+        .icon-links a:focus {
+          color: $brand-gray-light;
+        }
+
+        .icon-links a:nth-child(3) {
+          transition-delay: 0.1s;
+        }
+
+        .icon-links a:nth-child(2) {
+          transition-delay: 0.15s;
+        }
+
+        .icon-links a:first-child {
+          transition-delay: 0.2s;
+        }
+
+        .description {
+          opacity: 1;
+        }
+      }
+
+      figcaption,
+      h4,
+      p.icon-links a {
+        transform: translate3d(0,0,0);
+      }
+
+      h4 {
+        transition-delay: 0.05s;
+      }
+    }
+
+  }
+
+
+  /*---------------*/
+  /***** Chico *****/
+  /*---------------*/
+
+  figure.effect-chico {
+    .image {
+      transition: opacity 0.35s, transform 0.35s;
+      transform: scale(1.12);
+    }
+
+    figcaption {
+      padding: 3em;
+
+      &::before {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        border: 1px solid $brand-white;
+        content: '';
+        transform: scale(1.1);
+      }
+    }
+
+    figcaption::before,
+    p {
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+    }
+
+    h4 {
+      padding: 20% 0 20px 0;
+    }
+
+    p {
+      margin: 0 auto;
+      //max-width: 200px;
+      transform: scale(1.5);
+    }
+
+    &:hover {
+      .image {
+        opacity: 0.5;
+        transform: scale(1);
+      }
+
+      figcaption::before,
+      p {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+
+  *, *:after, *:before {
+    box-sizing: border-box;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: '';
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  //body {
+  //  background: #2f3238;
+  //  color: $brand-white;
+  //  font-weight: 400;
+  //  font-size: 1em;
+  //  font-family: 'Raleway', Arial, sans-serif;
+  //}
+
+  a {
+    outline: none;
+    color: #3498db; //todo color change
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    color: #528cb3; //todo color change
+  }
+
+  section {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .content {
+    margin: 0 auto;
+    //max-width: 1000px;
+  }
+
+  .content > h4 {
+    clear: both;
+    margin: 0;
+    padding: 4em 1% 0;
+    color: $brand-gray;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  .content > h4:first-child {
+    padding-top: 0em;
+  }
+
+
+  //#region breakpoints
+
+  //mobile
+  @media screen and (max-width: 50em) {
+    .content {
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    .grid figure {
+      display: inline-block;
+      float: none;
+      margin: 10px auto;
+      width: 100%;
+    }
+  }
+
+
+  @media only screen and ($breakpoint-xs) {
+    width: stretch !important;
+    max-width: stretch !important;
+
+    .grid {
+      width: stretch !important;
+      max-width: stretch !important;
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    .grid {
+      padding: 1em 0 2em;
+      width: 100%;
+
+      figure figcaption {
+        padding: 1em;
+      }
+    }
+  }
+
+  @media only screen and ($breakpoint-sm) {
+
+  }
+
+  @media only screen and ($breakpoint-md) {
+
+  }
+
+  @media only screen and ($breakpoint-lg) {
+
+  }
+  //#endregion
+}

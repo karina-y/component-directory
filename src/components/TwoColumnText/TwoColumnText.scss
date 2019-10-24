@@ -1,0 +1,62 @@
+@import '../stylesheets/variables.scss';
+
+.TwoColumnText {
+	margin: 0 auto;
+	border-top: solid 1px $light-pink;
+	border-bottom: solid 1px $light-pink;
+	padding: 25px 0;
+	overflow-x: hidden !important;
+
+	.left,
+	.right {
+		text-align: left;
+		color: $light-pink;
+		width: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: $font-sm;
+	}
+
+	.left {
+		border-right: solid 1px $light-pink;
+		padding-right: 20px;
+	}
+
+	.right {
+		padding-left: 20px;
+	}
+
+	//#region breakpoints
+	@media only screen and ($breakpoint-xs) {
+		.left,
+		.right {
+			width: 100%;
+			display: block;
+			padding: 0;
+		}
+
+		.left {
+			border-right: none;
+			border-bottom: solid 1px $light-pink;
+			padding-bottom: 40px;
+		}
+
+		.right {
+			padding: 20px 0 0;
+		}
+	}
+
+	@media only screen and ($breakpoint-sm) {
+
+	}
+
+	@media only screen and ($breakpoint-md) {
+
+	}
+
+	@media only screen and ($breakpoint-lg) {
+
+	}
+	//#endregion
+
+}

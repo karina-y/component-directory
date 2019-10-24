@@ -1,0 +1,92 @@
+@import '../stylesheets/variables.scss';
+
+.ParallaxBanner {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $brand-black;
+  opacity: .9;
+
+  .background {
+    height: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+
+    background-image: url('/images/landscape_01.jpeg');
+  }
+
+  .content {
+
+  }
+
+
+  //#region breakpoints
+  @media only screen and ($breakpoint-xxs) {
+    height: 150px;
+
+    .background {
+      background-attachment: inherit; //unset doesn't work on ios  -___-
+      background-attachment: unset;
+    }
+
+    .landscape {
+      background-image: url('/images/stock/landscape_350.jpg') !important;
+    }
+
+  }
+
+  @media only screen and ($breakpoint-xs) {
+    height: 150px;
+
+    .background {
+      background-attachment: inherit; //unset doesn't work on ios  -___-
+      background-attachment: unset;
+    }
+
+    .landscape {
+      background-image: url('/images/stock/landscape_768.jpg');
+    }
+
+  }
+
+  @media only screen and ($breakpoint-sm) {
+    .landscape {
+      background-image: url('/images/stock/landscape_992.jpg');
+    }
+
+  }
+
+  @media only screen and ($breakpoint-md) {
+    .landscape {
+      background-image: url('/images/stock/landscape_1280.jpg');
+    }
+
+  }
+
+  @media only screen and ($breakpoint-lg) {
+    .landscape {
+      background-image: url('/images/stock/landscape_1440.jpg');
+    }
+  }
+
+  @media only screen and ($breakpoint-xl) {
+    .landscape {
+      background-image: url('/images/stock/landscape_1920.jpg');
+    }
+  }
+
+  @media only screen and ($breakpoint-xxl) {
+    .landscape {
+      background-image: url('/images/stock/landscape_3200.jpg');
+    }
+  }
+  //#endregion
+}

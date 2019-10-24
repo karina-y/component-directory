@@ -1,0 +1,508 @@
+@import '../stylesheets/variables.scss';
+
+.navbar-container {
+  background: $brand-white;
+  position: sticky;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  height: 85px;
+
+  .custom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    .brand {
+      width: 100px;
+      height: auto;
+      float: left;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 100%;
+
+      &.active {
+        a {
+          color: $dark-pink;
+        }
+      }
+
+      a {
+        color: gray;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+nav.navbar {
+
+  border: none;
+
+  @keyframes bounceIn {
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(-30px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes bounceOut {
+    0% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(10px);
+    }
+    60% {
+      transform: translateX(-30px);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .contact-btn {
+    background: $light-blue;
+    transition: opacity 0.2s ease-in;
+
+    .enroll-now {
+      color: $brand-white;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.desktop {
+    padding: 0;
+
+    ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    ul li {
+      display: inline-block;
+      padding: 10px 0;
+    }
+
+    ul li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: $brand-gray-light;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 10px;
+      position: relative;
+
+      &,
+      &:after {
+        transition: all .5s;
+      }
+
+      &:hover {
+        color: $dark-pink !important;
+      }
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        //content: '.'; //this is an underline transition
+        color: transparent;
+        background: $dark-pink;
+        height: 1px;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+
+    .navbar-header {
+      padding-top: 10px;
+    }
+
+    .navbar-brand {
+      margin: 0;
+    }
+
+    .navbar-collapse {
+      //width: inherit;
+      //position: fixed;
+    }
+
+    .dropdown {
+
+
+      &.open,
+      &:hover {
+        &,
+        a {
+          background-color: unset !important;
+        }
+
+        .dropdown-menu {
+          opacity: 1;
+          pointer-events: all;
+        }
+
+      }
+
+      li {
+        width: 100%;
+        text-align: left !important;
+
+        a:hover {
+          background-color: unset !important;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      display: block !important;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s, height 5s;
+      margin-top: -5px;
+      box-shadow: -1px -5px 14px 0px rgba(65, 4, 62,.1);
+
+      &:hover {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      &:after {
+        bottom: 100%;
+        //left: 50%;
+        left: 33px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        //box-shadow: 0px 20px 18px 4px rgba(0,0,0,.15);
+      }
+
+      &:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $brand-white;
+        border-width: 15px;
+        //margin-left: -15px;
+      }
+    }
+
+
+    a.navbar-brand {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //margin: 0 0 0 -30px;
+      float: left;
+    }
+
+    img.logo {
+      z-index: 9;
+      width: 50px;
+    }
+
+    .nav.navbar-nav {
+      float: right;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    //.enroll-now {
+    //  color: $dark-pink;
+    //}
+
+  }
+
+  &.mobile {
+    padding: 5px 0;
+
+    .navbar-right {
+      float: unset !important;
+    }
+
+    .collapsed {
+
+    }
+
+    .navbar-header {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      margin-left: 30px;
+    }
+
+    a.navbar-brand {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+    }
+
+    img.logo {
+      z-index: 9;
+      width: 50px;
+    }
+
+    .navbar-toggle {
+      display: inline-block;
+    }
+
+
+    ul {
+      list-style: none;
+      text-align: center;
+      width: min-content;
+      white-space: nowrap;
+    }
+
+    ul li {
+      text-align: left;
+      display: block;
+      width: min-content;
+      white-space: nowrap;
+      min-width: 250px;
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: $brand-gray-light;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 10px;
+      position: relative;
+
+      &,
+      &:after {
+        transition: all .5s;
+      }
+
+      &:hover {
+        color: $dark-pink !important;
+      }
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        //content: '.'; //this is an underline transition
+        color: transparent;
+        background: $dark-pink;
+        height: 1px;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      right: 0;
+      top: $nav-height;
+      background: $brand-white;
+      overflow-y: scroll !important;
+      overflow-x: hidden !important;
+      transform: translateX(100%);
+      animation: bounceOut .6s;
+      animation-fill-mode: both;
+      opacity: 0;
+      transition: opacity 1s;
+      height: inherit !important;
+      padding: 0;
+      border: solid 1px $brand-off-white;
+
+      &.in {
+        animation: bounceIn .7s;
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity .4s;
+      }
+    }
+
+    .navbar-nav {
+      float: right;
+      vertical-align: middle;
+      margin: 0;
+      width: min-content;
+    }
+
+    .dropdown {
+      padding: 0;
+      width: 100%;
+      float: left;
+
+      //&.open {
+      //keeping this open at all times because on ios it clicks through to the links behind it
+      .dropdown-menu {
+        display: block !important;
+        height: auto;
+        pointer-events: all;
+        opacity: 1;
+        box-shadow: none;
+        border: none;
+        //}
+      }
+
+      .caret {
+        display: none;
+      }
+
+      &.open,
+      &:hover {
+        &,
+        a {
+          background-color: unset !important;
+        }
+
+        .dropdown-menu {
+          opacity: 1;
+          pointer-events: all;
+        }
+
+      }
+    }
+
+    .dropdown-menu {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s, height 5s;
+      //margin-top: -5px;
+      box-shadow: -1px -5px 14px 0px rgba(65, 4, 62,.1);
+      position: relative;
+      padding: 0;
+      width: 100%;
+      float: left;
+      margin-top: 3px;
+
+      &:hover {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      &:after {
+        bottom: 100%;
+        left: 33px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      &:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $brand-white;
+        border-width: 15px;
+      }
+
+      a {
+        padding: 15px;
+        margin: 0 10px;
+        white-space: normal;
+      }
+    }
+
+    //.enroll-now {
+    //  color: $dark-pink;
+    //}
+  }
+
+  //#region breakpoints
+  //mobile nav
+  @media only screen and ($breakpoint-xs) {
+    &.desktop {
+      display: none;
+    }
+
+    &.mobile {
+      display: block;
+    }
+
+    .navbar-header {
+      margin-left: 15px !important;
+    }
+  }
+
+  //mobile nav
+  @media only screen and ($breakpoint-sm) {
+    &.desktop {
+      display: none;
+    }
+
+    &.mobile {
+      display: block;
+    }
+  }
+
+  //mobile nav
+  @media only screen and ($breakpoint-md) {
+    &.desktop {
+      display: block;
+    }
+
+    &.mobile {
+      display: none;
+    }
+  }
+
+  //full nav
+  @media only screen and ($breakpoint-lg) {
+    &.desktop {
+      display: block;
+    }
+
+    &.mobile {
+      display: none;
+    }
+  }
+  //#endregion
+}

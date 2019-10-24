@@ -1,0 +1,583 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700,900|Ubuntu:200,500,700,900');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  width: 100% !important;
+  min-width: 100% !important;
+  height: 100%;
+  background-color: $dark-gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $brand-off-white;
+
+  .App {
+
+    .routes {
+      padding: 0;
+      margin-top: 50px;
+      width: 100% !important;
+    }
+
+    .navbar.navbar-default {
+      margin-bottom: 0;
+    }
+
+    .component-container {
+      margin-bottom: 100px;
+
+      h1 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      &.imagehover-components {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        h1 {
+          width: 100%;
+        }
+      }
+
+      &#parallaxbanner {
+        height: 300px;
+        left: 0;
+
+        .ParallaxBanner {
+          position: absolute;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .scroll-up > div {
+    border-radius: 100%;
+    padding: 20px 25px;
+    background: $light-pink;
+    color: $brand-white;
+    font-size: 2.5rem;
+    z-index: 9; //falls behind some elements here and there
+  }
+
+  //#region text/fonts
+  .title,
+  .title p {
+    font-family: "Ubuntu", "Open Sans", sans-serif;
+    font-size: $font-lg;
+    //font-weight: bold;
+    margin: 0;
+    padding: 20px 0;
+    color: $dark-pink;
+    text-align: center;
+
+    &.xl {
+      font-size: $font-xl;
+    }
+
+    &.md {
+      font-size: $font-md;
+    }
+  }
+
+  .subtitle {
+    font-family: "Ubuntu", sans-serif;
+    font-size: $font-md;
+    margin-bottom: 20px;
+    color: $light-pink;
+    text-align: center;
+  }
+
+  p,
+  .desc {
+    font-size: $font-sm;
+  }
+
+  p {
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin: 0;
+
+    &.title {
+      line-height: 1.4;
+    }
+  }
+
+  //h1 tags are used used solely for seo purposes!
+  .non-title {
+    line-height: 1.5;
+    font-size: $font-sm;
+    margin: 0;
+    display: inline-block;
+  }
+
+  h4 {
+    font-size: $font-lg;
+  }
+
+  //.quote {
+  //  font-size: $font-md;
+  //}
+  //
+  //.quoter {
+  //  font-size: $font-sm;
+  //  margin-top: 20px;
+  //  font-weight: bold;
+  //}
+
+  .job-title {
+    font-style: italic;
+  }
+
+  .highlight {
+    background: $light-blue;
+    color: $brand-white;
+  }
+
+  .text-blue {
+    color: $dark-blue;
+  }
+
+  .text-blue-light {
+    color: $light-blue;
+  }
+
+  .text-pink {
+    color: $dark-pink;
+  }
+
+  .text-pink-light {
+    color: $light-pink;
+  }
+
+  a {
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+
+    &:hover {
+      transition: color 0.2s ease-in, background 0.2s ease-in;
+    }
+  }
+
+  a,
+  input {
+    &:focus,
+    &:active {
+      outline: none !important;
+    }
+  }
+  //#endregion
+
+  .pad-section-lg {
+    padding: 0 150px;
+  }
+
+  .pad-section-md {
+    padding: 0 300px;
+  }
+
+  .pad-section-sm {
+    padding: 0 500px;
+  }
+
+  .partial-width-lg {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .partial-width-md {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+
+  button {
+    background: $brand-white;
+    border-radius: 10px 4px !important;
+    text-transform: uppercase;
+    outline: none !important;
+
+    &.popup {
+      display: inline-block;
+      padding: 20px 30px;
+      box-shadow: 0 17px 10px -10px rgba(0,0,0,0.4);
+      transition: transform ease-in-out 300ms, box-shadow ease-in-out 300ms;
+
+      &:hover {
+        box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.2);
+        transform: translate(0px, -5px) scale(1.1);
+      }
+    }
+
+    &.btn-lg {
+      padding: 12px 18px;
+      font-size: $font-md;
+    }
+
+    &.btn-md {
+      padding: 12px 18px;
+      font-size: $font-xs;
+    }
+
+    &.btn-sm {
+      padding: 12px 18px;
+      font-size: $font-xxs;
+    }
+
+    //transition: all 0.2s ease-in;
+
+    &,
+    &:hover {
+      transition: all 0.2s ease-in !important;
+    }
+
+    //#region colors
+    &.blue-btn {
+      background: $dark-blue;
+      color: $brand-white;
+      border: solid 1px $brand-white !important;
+      font-weight: bold;
+
+      &:hover {
+        color: $dark-blue;
+        background: $brand-white;
+        border: solid 1px $dark-blue !important;
+      }
+
+
+      &.invert {
+        background: $brand-white;
+        color: $dark-blue;
+        border: solid 1px $dark-blue !important;
+
+        &:hover {
+          color: $brand-white;
+          background: $dark-blue;
+          border: solid 1px $brand-white !important;
+        }
+      }
+    }
+
+    &.blue-light-btn {
+      background: $light-blue;
+      color: $brand-white;
+      border: solid 1px $brand-white !important;
+      font-weight: bold;
+
+      &:hover {
+        color: $light-blue;
+        background: $brand-white;
+        border: solid 1px $light-blue !important;
+      }
+
+
+      &.invert {
+        background: $brand-white;
+        color: $light-blue;
+        border: solid 1px $light-blue !important;
+
+        &:hover {
+          color: $brand-white;
+          background: $light-blue;
+          border: solid 1px $brand-white !important;
+        }
+      }
+    }
+
+    &.purple-btn {
+      background: $light-purple;
+      color: $brand-white;
+      border: solid 1px $brand-white !important;
+      font-weight: bold;
+
+      &:hover {
+        color: $light-purple;
+        background: $brand-white;
+        border: solid 1px $light-purple !important;
+      }
+
+
+      &.invert {
+        background: $brand-white;
+        color: $light-purple;
+        border: solid 1px $light-purple !important;
+
+        &:hover {
+          color: $brand-white;
+          background: $light-purple;
+          border: solid 1px $brand-white !important;
+        }
+      }
+    }
+
+    &.dark-purple-btn {
+      background: $dark-purple;
+      color: $brand-white;
+      border: solid 1px $brand-white !important;
+      font-weight: bold;
+
+      &:hover {
+        color: $dark-purple;
+        background: $brand-white;
+        border: solid 1px $dark-purple !important;
+      }
+
+
+      &.invert {
+        background: $brand-white;
+        color: $dark-purple;
+        border: solid 1px $dark-purple !important;
+
+        &:hover {
+          color: $brand-white;
+          background: $dark-purple;
+          border: solid 1px $brand-white !important;
+        }
+      }
+    }
+
+    &.pink-btn {
+      background: $light-pink;
+      color: $brand-white;
+      border: solid 1px $brand-white !important;
+      font-weight: bold;
+
+      &:hover {
+        color: $light-pink;
+        background: $brand-white;
+        border: solid 1px $light-pink !important;
+      }
+
+
+      &.invert {
+        background: $brand-white;
+        color: $light-pink;
+        border: solid 1px $light-pink !important;
+
+        &:hover {
+          color: $brand-white;
+          background: $light-pink;
+          border: solid 1px $brand-white !important;
+        }
+      }
+    }
+
+    &.dark-pink-btn {
+      background: $dark-pink;
+      color: $brand-white;
+      border: solid 1px $brand-white !important;
+      font-weight: bold;
+
+      &:hover {
+        color: $dark-pink;
+        background: $brand-white;
+        border: solid 1px $dark-pink !important;
+      }
+
+
+      &.invert {
+        background: $brand-white;
+        color: $dark-pink;
+        border: solid 1px $dark-pink !important;
+
+        &:hover {
+          color: $brand-white;
+          background: $dark-pink;
+          border: solid 1px $brand-white !important;
+        }
+      }
+    }
+    //#endregion
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus,
+    &:visited {
+      outline: none !important;
+    }
+
+    &.naked {
+      border: none;
+      background: none;
+      padding: 0;
+
+      &:hover,
+      &:active,
+      &:focus,
+      &:active:focus {
+        background: none;
+        border: none;
+        box-shadow: none;
+        outline: none !important;
+      }
+    }
+  }
+
+
+
+  @media only screen and ($breakpoint-xs) {
+    .title,
+    .title p {
+      font-size: $font-md;
+      padding-bottom: 15px;
+
+      &.xl {
+        font-size: $font-lg;
+      }
+
+      &.md {
+        font-size: $font-md;
+      }
+    }
+
+    .quote {
+      font-size: $font-sm;
+    }
+
+    .navbar-header {
+      float: left;
+    }
+
+    .scroll-up > div {
+      bottom: 15px !important;
+      right: 15px !important;
+      padding: 10px 15px;
+      font-size: $font-md;
+    }
+
+    button {
+
+      &.btn-lg {
+        padding: 12px 18px;
+        font-size: $font-xxs;
+      }
+
+      &.btn-md {
+        padding: 12px 18px;
+        font-size: $font-xxs;
+      }
+
+      &.btn-sm {
+        padding: 12px 18px;
+        font-size: $font-xxs;
+      }
+    }
+
+
+    .pad-section-sm,
+    .pad-section-md,
+    .pad-section-lg {
+      padding: 0 20px;
+    }
+
+  }
+
+  @media only screen and ($breakpoint-sm) {
+
+    button {
+
+      &.btn-lg {
+        padding: 12px 18px;
+        font-size: $font-xs;
+      }
+
+      &.btn-md {
+        padding: 12px 18px;
+        font-size: $font-xs;
+      }
+
+      &.btn-sm {
+        padding: 12px 18px;
+        font-size: $font-xxs;
+      }
+    }
+
+    .pad-section-sm {
+      padding: 0 100px;
+    }
+
+    .pad-section-md {
+      padding: 0 100px;
+    }
+
+    .pad-section-lg {
+
+    }
+  }
+
+  @media only screen and ($breakpoint-md) {
+
+    button {
+
+      &.btn-lg {
+        padding: 12px 18px;
+        font-size: $font-sm;
+      }
+
+      &.btn-md {
+        padding: 12px 18px;
+        font-size: $font-xs;
+      }
+
+      &.btn-sm {
+        padding: 12px 18px;
+        font-size: $font-xxs;
+      }
+    }
+
+
+
+    .pad-section-sm {
+      padding: 0 100px;
+    }
+
+    .pad-section-md {
+      padding: 0 100px;
+    }
+
+    .pad-section-lg {
+
+    }
+  }
+
+  @media only screen and ($breakpoint-lg) {
+    .pad-section-sm {
+      padding: 0 250px;
+    }
+
+    .pad-section-md {
+      padding: 0 250px;
+    }
+
+    .pad-section-lg {
+      padding: 0 150px;
+    }
+
+
+  }
+
+  @media only screen and ($breakpoint-xl) {
+    .pad-section-sm {
+      padding: 0 500px;
+    }
+
+    .pad-section-md {
+      padding: 0 300px;
+    }
+
+    .pad-section-lg {
+      padding: 0 150px;
+    }
+
+
+  }
+
+}
