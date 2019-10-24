@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e7a5aa6-e413-419f-b08d-eaac3b1cbacb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/stylesheets/variables.scss" afterPath="$PROJECT_DIR$/src/components/stylesheets/variables.scss" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ComponentDirectory.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,45 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ComponentDirectory.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/ComponentDirectory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="326" column="0" lean-forward="false" selection-start-line="326" selection-start-column="0" selection-end-line="326" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#741#1491#0" expanded="false" />
-                <element signature="e#1509#3688#0" expanded="false" />
-                <element signature="e#1513#1788#0" expanded="false" />
-                <element signature="e#1792#2097#0" expanded="false" />
-                <element signature="e#2101#2395#0" expanded="false" />
-                <element signature="e#2399#2722#0" expanded="false" />
-                <element signature="e#2726#3002#0" expanded="false" />
-                <element signature="e#3006#3308#0" expanded="false" />
-                <element signature="e#3312#3686#0" expanded="false" />
-                <element signature="e#3710#14649#0" expanded="false" />
-                <element signature="e#15738#15924#0" expanded="false" />
-                <element signature="e#15930#16103#0" expanded="false" />
-                <element signature="e#16109#16268#0" expanded="false" />
-                <element signature="e#16274#16433#0" expanded="false" />
-                <element signature="e#16439#17021#0" expanded="false" />
-                <element signature="e#17027#17136#0" expanded="false" />
-                <element signature="e#17142#17453#0" expanded="false" />
-                <element signature="e#17459#17579#0" expanded="false" />
-                <element signature="e#17585#18001#0" expanded="false" />
-                <element signature="e#18007#18785#0" expanded="false" />
-                <element signature="e#18791#19295#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ShadowBox.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ShadowBox/ShadowBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="432">
+              <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding>
+                <element signature="e#50#76#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +56,8 @@
       <file leaf-file-name="variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/stylesheets/variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -117,17 +85,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Navigation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Navigation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+            <state relative-caret-position="113">
+              <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="n#SideNavWrapper#0" expanded="false" />
-                <element signature="n#!!block;n#changeSide#0;n#Navigation#0" expanded="false" />
-                <element signature="n#!!block;n#getItems#0;n#Navigation#0" expanded="false" />
-                <element signature="e#4078#4468#0" expanded="false" />
+                <element signature="e#1610#2000#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -156,8 +122,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="360">
+              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="e#65#139#0" expanded="true" />
               </folding>
@@ -165,16 +131,113 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Navigation.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Navigation.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            <state relative-caret-position="342">
+              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
-                <element signature="e#259#880#0" expanded="false" />
-                <element signature="e#3655#3882#0" expanded="false" />
-                <element signature="e#3906#4166#0" expanded="false" />
-                <element signature="e#4236#4957#0" expanded="false" />
+                <element signature="e#3684#3911#0" expanded="false" />
+                <element signature="e#3935#4195#0" expanded="false" />
+                <element signature="e#4265#4986#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccordionPanelPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/AccordionPanelPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageCarouselPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/ImageCarouselPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#157#907#0" expanded="false" />
+                <element signature="e#1175#1334#0" expanded="false" />
+                <element signature="e#1340#1499#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageHoverPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/ImageHoverPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#241#11180#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoaderPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/LoaderPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParallaxBannerPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/ParallaxBannerPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuoteCardPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/QuoteCardPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShadowBoxPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/ShadowBoxPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextImageOverlapPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/TextImageOverlapPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="79" lean-forward="false" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,24 +247,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>history</find>
-      <find>65,4,62</find>
-      <find>color:</find>
-      <find>stock/brain-vitamins_768.jpg</find>
-      <find>.pad-section-md</find>
-      <find>1.75em</find>
-      <find>$font-m</find>
-      <find>$font-lg</find>
-      <find>-md</find>
-      <find>font-size</find>
-      <find>font-si</find>
-      <find>#</find>
-      <find>MenuWrap</find>
-      <find>demo</find>
-      <find>props.menus</find>
-      <find>Demo</find>
-      <find>#reveal</find>
-      <find>@import</find>
       <find>@</find>
       <find>#revewa</find>
       <find>wait</find>
@@ -214,15 +259,26 @@
       <find>.bm-menu</find>
       <find>react-burger-menu</find>
       <find>bubble</find>
+      <find>favorites</find>
+      <find>getItems</find>
+      <find>changemenu</find>
+      <find>changeside</find>
+      <find>.href</find>
+      <find>bm-item</find>
+      <find>ComponentDirectory</find>
+      <find>AccordionPanel</find>
+      <find>AccordionPanelPage</find>
+      <find>QuoteCardPage</find>
+      <find>ShadowBoxPage</find>
+      <find>ImageCarouselPage</find>
+      <find>ImageHoverPage</find>
+      <find>LoaderPage</find>
+      <find>ParallaxBannerPage</find>
+      <find>#</find>
+      <find>`#${item.href}`</find>
+      <find>space-</find>
     </findStrings>
     <replaceStrings>
-      <replace>$light-pink</replace>
-      <replace>$dark-pink</replace>
-      <replace>$light-blue</replace>
-      <replace>../stylesheets/variables.scss</replace>
-      <replace>ComponentDirectory</replace>
-      <replace>image alt</replace>
-      <replace>$dark-blue</replace>
       <replace>500px</replace>
       <replace>fname</replace>
       <replace>phone</replace>
@@ -243,6 +299,16 @@
       <replace>state.menus</replace>
       <replace>Navigation</replace>
       <replace>SideNavWrapper</replace>
+      <replace>AccordionPanel</replace>
+      <replace>AccordionPanelPage</replace>
+      <replace>ImageCarouselPage</replace>
+      <replace>ShadowBoxPage</replace>
+      <replace>ImageHoverPage</replace>
+      <replace>LoaderPage</replace>
+      <replace>ParallaxBannerPage</replace>
+      <replace>QuoteCardPage</replace>
+      <replace>TextImageOverlapPage</replace>
+      <replace>item.href</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -267,14 +333,22 @@
         <option value="$PROJECT_DIR$/src/components/ShadowBox/ShadowBox.js" />
         <option value="$PROJECT_DIR$/src/components/ShadowBox/ShadowBox.scss" />
         <option value="$PROJECT_DIR$/src/components/TextImageOverlap/TextImageOverlap.js" />
-        <option value="$PROJECT_DIR$/src/pages/ComponentDirectory.js" />
         <option value="$PROJECT_DIR$/src/components/TextImageOverlap/TextImageOverlap.scss" />
         <option value="$PROJECT_DIR$/src/components/stylesheets/sitewide.scss" />
-        <option value="$PROJECT_DIR$/src/components/stylesheets/variables.scss" />
         <option value="$PROJECT_DIR$/src/components/QuoteCard/QuoteCard.scss" />
+        <option value="$PROJECT_DIR$/src/components/stylesheets/variables.scss" />
+        <option value="$PROJECT_DIR$/src/pages/AccordionPanel.js" />
+        <option value="$PROJECT_DIR$/src/pages/ImageCarouselPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/ImageHoverPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/LoaderPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/ParallaxBannerPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/QuoteCardPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/ShadowBoxPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/TextImageOverlapPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/ComponentDirectory.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" />
         <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" />
       </list>
     </option>
   </component>
@@ -377,13 +451,6 @@
               <item name="component-library" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TextImageOverlap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="component-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="component-library" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="TwoColumnContent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -411,6 +478,12 @@
               <item name="component-library" type="b2602c69:ProjectViewProjectNode" />
               <item name="component-library" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -431,9 +504,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,12 +534,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571854987592</updated>
-      <workItem from="1571854988731" duration="23507000" />
+      <workItem from="1571854988731" duration="28125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23507000" />
+    <option name="totallyTimeSpent" value="28125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="25" width="1852" height="1055" extended-state="6" />
@@ -724,14 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ShadowBox/ShadowBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ShadowBox/ShadowBox.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -766,14 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/stylesheets/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/QuoteCard/QuoteCard.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="761">
@@ -782,70 +839,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/ComponentDirectory.js">
+    <entry file="file://$PROJECT_DIR$/src/components/stylesheets/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="326" column="0" lean-forward="false" selection-start-line="326" selection-start-column="0" selection-end-line="326" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/AccordionPanelPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#741#1491#0" expanded="false" />
-            <element signature="e#1509#3688#0" expanded="false" />
-            <element signature="e#1513#1788#0" expanded="false" />
-            <element signature="e#1792#2097#0" expanded="false" />
-            <element signature="e#2101#2395#0" expanded="false" />
-            <element signature="e#2399#2722#0" expanded="false" />
-            <element signature="e#2726#3002#0" expanded="false" />
-            <element signature="e#3006#3308#0" expanded="false" />
-            <element signature="e#3312#3686#0" expanded="false" />
-            <element signature="e#3710#14649#0" expanded="false" />
-            <element signature="e#15738#15924#0" expanded="false" />
-            <element signature="e#15930#16103#0" expanded="false" />
-            <element signature="e#16109#16268#0" expanded="false" />
-            <element signature="e#16274#16433#0" expanded="false" />
-            <element signature="e#16439#17021#0" expanded="false" />
-            <element signature="e#17027#17136#0" expanded="false" />
-            <element signature="e#17142#17453#0" expanded="false" />
-            <element signature="e#17459#17579#0" expanded="false" />
-            <element signature="e#17585#18001#0" expanded="false" />
-            <element signature="e#18007#18785#0" expanded="false" />
-            <element signature="e#18791#19295#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/ImageCarouselPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#157#907#0" expanded="false" />
+            <element signature="e#1175#1334#0" expanded="false" />
+            <element signature="e#1340#1499#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/ImageHoverPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#241#11180#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/LoaderPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/ParallaxBannerPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/QuoteCardPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/TextImageOverlapPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="79" lean-forward="false" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/ShadowBoxPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/ComponentDirectory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ShadowBox/ShadowBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#50#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="360">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#65#139#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        <state relative-caret-position="113">
+          <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
           <folding>
-            <element signature="e#259#880#0" expanded="false" />
-            <element signature="e#3655#3882#0" expanded="false" />
-            <element signature="e#3906#4166#0" expanded="false" />
-            <element signature="e#4236#4957#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="n#SideNavWrapper#0" expanded="false" />
+            <element signature="e#1610#2000#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        <state relative-caret-position="342">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#SideNavWrapper#0" expanded="false" />
-            <element signature="n#!!block;n#changeSide#0;n#Navigation#0" expanded="false" />
-            <element signature="n#!!block;n#getItems#0;n#Navigation#0" expanded="false" />
-            <element signature="e#4078#4468#0" expanded="false" />
+            <element signature="e#3684#3911#0" expanded="false" />
+            <element signature="e#3935#4195#0" expanded="false" />
+            <element signature="e#4265#4986#0" expanded="false" />
           </folding>
         </state>
       </provider>
