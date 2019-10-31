@@ -1,0 +1,24 @@
+@import '../stylesheets/variables.scss';
+
+.InputField {
+
+
+
+  //#region breakpoints
+  @media only screen and ($breakpoint-xs) {
+
+  }
+
+  @media only screen and ($breakpoint-sm) {
+
+  }
+
+  @media only screen and ($breakpoint-md) {
+
+  }
+
+  @media only screen and ($breakpoint-lg) {
+
+  }
+  //#endregion
+}
