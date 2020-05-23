@@ -57,6 +57,19 @@
   .text {
     font-family: "Ubuntu", sans-serif;
     font-size: $font-sm;
+    line-height: 1.5;
+
+    .title-style {
+      font-weight: bold;
+      font-size: $font-md;
+      display: block;
+      padding-bottom: 10px;
+    }
+
+    .sub-style {
+      display: block;
+      line-height: 1.75;
+    }
   }
 
   //#region breakpoints

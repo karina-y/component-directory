@@ -28,20 +28,20 @@ class TwoColumnContent extends React.Component {
 			  {this.props.topLabel && <h4 className="top-label title">{this.props.topLabel}</h4>}
 
 			  {this.props.leftItem === "image" ?
-					  <div className={`left ${this.props.leftItem}`} style={{backgroundImage: `url('${this.props.leftContent}')`}}>
+					  <div className="left image" style={{backgroundImage: `url('${this.props.leftContent}')`}}>
 					  </div>
 					  :
-					  <div className={`left ${this.props.leftItem}`}>
+					  <div className="left text">
 						{this.props.leftContent}
 					  </div>
 			  }
 
 
-			  {this.props.rightItem === "image" ?
-					  <div className={`right ${this.props.rightItem}`} style={{backgroundImage: `url('${this.props.rightContent}')`}}>
+			  {this.props.leftItem === "text" ?
+					  <div className="right image" style={{backgroundImage: `url('${this.props.rightContent}')`}}>
 					  </div>
 					  :
-					  <div className={`right ${this.props.rightItem}`}>
+					  <div className="right text">
 						{this.props.rightContent}
 					  </div>
 			  }

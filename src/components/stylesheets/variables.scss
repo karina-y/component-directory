@@ -47,7 +47,7 @@ $hero-gradient: linear-gradient(to right, rgba(0, 104, 255, 0.6), rgba(255, 0, 1
 //dark theme
 $light-gray: #5f6799;
 $dark-gray: #171927;
-$med-gray: #1B1E30;
+$med-gray: #3c4161;
 
 $light-pink: #E471BE;
 $dark-pink: #DB54CA;
@@ -66,7 +66,7 @@ $orange: #D5645C;
 
 $mobile-pad: 0 20px;
 
-$nav-height: 70px;
+$nav-height: 85px;
 $footer-height: 92px;
 $vh-less-nav: calc(100vh - #{$nav-height});
 $vh-less-footer: calc(100vh - #{$footer-height});
@@ -75,7 +75,7 @@ $vh-less-nav-footer: calc(100vh - #{$nav-height} - #{$footer-height});
 $body-content-width: 60vw;
 
 $font-xxs: 10px;
-$font-xs: 15px;
+$font-xs: .75em;
 $font-sm: 20px;
 $font-md: 30px;
 $font-lg: 40px;

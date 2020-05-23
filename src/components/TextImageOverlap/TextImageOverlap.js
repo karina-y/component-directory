@@ -27,7 +27,19 @@ const TextImageOverlap = props => (
 				  <Fade up={true}
 						duration={600}
 						delay={200}>
-					<div className="right text">{props.text}</div>
+					<div className="right text">
+					  {props.titleText &&
+					  <span className="title-style">
+						{props.titleText}
+					  </span>
+					  }
+
+					  {props.subText &&
+					  <span className="sub-style">
+						{props.subText}
+					  </span>
+					  }
+					</div>
 				  </Fade>
 				</div>
 
@@ -37,7 +49,19 @@ const TextImageOverlap = props => (
 				  <Fade up={true}
 						duration={600}
 						delay={200}>
-					<div className="left text">{props.text}</div>
+					<div className="left text">
+					  {props.titleText &&
+					  <span className="title-style">
+						{props.titleText}
+					  </span>
+					  }
+
+					  {props.subText &&
+					  <span className="sub-style">
+						{props.subText}
+					  </span>
+					  }
+					</div>
 				  </Fade>
 
 				  <div className="right images">

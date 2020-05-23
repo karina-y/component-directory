@@ -25,6 +25,16 @@
 
   .carousel-caption {
     border-radius: 0 4px 10px 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    //background-color: $light-gray;
+    //opacity: .6;
+    height: 75px;
+
+    h5 {
+      //padding: 0px 0;
+    }
   }
 
   h5 {
@@ -37,9 +47,29 @@
     height: calc(100% - 110px);
 
     .carousel-inner,
-    .item,
     .image {
       height: 100%;
+    }
+
+    .carousel-item {
+      height: inherit;
+
+      &:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        backdrop-filter: blur(7px);
+        bottom: 0;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 0 4px 10px 0;
+        width: 100%;
+        left: 0;
+        height: 75px;
+      }
     }
 
     //fading effect
@@ -124,7 +154,7 @@
       margin: 10px;
       cursor: pointer;
       width: 100px;
-      height: 80px;
+      padding: unset;
     }
 
   }
@@ -245,6 +275,27 @@
       z-index: 2;
       opacity: .25;
       //width: 15% !important;
+    }
+
+    .carousel-item:before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      backdrop-filter: blur(7px);
+      bottom: 0;
+      z-index: 10;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: center;
+      border-radius: 0 4px 10px 0;
+      width: 100%;
+      left: 0;
+      height: 75px;
+    }
+
+    .carousel-caption {
+      bottom: 0;
     }
   }
 

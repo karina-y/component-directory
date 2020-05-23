@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	border-top: solid 1px $light-pink;
 	border-bottom: solid 1px $light-pink;
-	padding: 25px 0;
+	padding: 50px 0;
 	overflow-x: hidden !important;
 
 	.left,
@@ -19,11 +19,11 @@
 
 	.left {
 		border-right: solid 1px $light-pink;
-		padding-right: 20px;
+		padding-right: 40px;
 	}
 
 	.right {
-		padding-left: 20px;
+		padding-left: 40px;
 	}
 
 	//#region breakpoints

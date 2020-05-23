@@ -1,0 +1,198 @@
+@import '../stylesheets/variables.scss';
+
+.Editor {
+
+  .label {
+    background: $magenta;
+  }
+
+  .label-margin {
+    margin-right: 10px;
+  }
+
+  .ql-editor {
+    min-height: 300px;
+  }
+
+  .editor-title {
+    margin: 30px 0;
+  }
+
+  .pretty-checkbox-switch {
+    input {
+      height: 23px !important;
+    }
+
+    label {
+      margin-left: 20px !important;
+    }
+
+    &.pretty.p-bigger label:before,
+    &.pretty.p-bigger label:after,
+    &.pretty.p-bigger .icon,
+    &.pretty.p-bigger .svg,
+    &.pretty.p-bigger .img {
+      font-size: 1.5em !important;
+      top: -1px !important;
+      left: 0;
+    }
+
+
+    &.pretty.p-switch .state:before {
+      font-size: 1.4em;
+      top: -1px !important;
+      left: 0;
+    }
+  }
+
+  .quill {
+    margin-bottom: 30px;
+    background: $med-gray;
+
+    .ql-container.ql-snow {
+      border: none;
+    }
+
+    .ql-toolbar.ql-snow {
+      border: none;
+      border-bottom: solid 1px #1B1E30;
+    }
+
+    .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label,
+    .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+      border: none;
+      background: $light-gray;
+    }
+
+    .ql-snow .ql-picker {
+      color: $brand-off-white;
+    }
+
+    .ql-snow.ql-toolbar button:hover .ql-stroke {
+      stroke: $magenta;
+    }
+
+    //.ql-snow .ql-bold:hover {
+    //  color: $magenta;
+    //
+    //  .ql-snow .ql-stroke {
+    //    &:hover {
+    //      stroke: $magenta !important;
+    //    }
+    //  }
+    //}
+
+    .ql-snow .ql-strike:hover,
+    .ql-snow .ql-formats .ql-link:hover,
+    .ql-snow .ql-formats .ql-clean:hover,
+    .ql-snow .ql-formats .ql-image:hover {
+
+      .ql-stroke,
+      .ql-fill,
+      .ql-even {
+        stroke: $magenta;
+        color: $magenta;
+        fill: transparent;
+      }
+    }
+
+    .ql-snow .ql-stroke,
+    .ql-snow .ql-fill {
+      stroke: $brand-off-white;
+
+      &:hover {
+        stroke: $magenta;
+      }
+    }
+
+    .ql-snow.ql-toolbar .ql-picker-label:hover,
+    .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+    .ql-snow.ql-toolbar .ql-picker-item:hover,
+    .ql-snow.ql-toolbar button.ql-active,
+    .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+    .ql-snow.ql-toolbar button.ql-active .ql-stroke,
+    .ql-snow.ql-toolbar button.ql-active .ql-fill {
+      color: $magenta;
+      stroke: $magenta;
+    }
+
+    .ql-editor {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .buttons {
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    .col-sm-4 {
+      text-align: center;
+    }
+  }
+
+  .submit-btn {
+    text-align: center;
+  }
+
+  .error-message {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    z-index: -1;
+    position: absolute;
+    color: $danger;
+    font-weight: bold;
+    transform: translate3d(0, -55px, 0);
+    opacity: 0;
+    transition: all .25s ease-in;
+
+    &.slide-down {
+      transform: translate3d(0, -25px, 0);
+      opacity: 1;
+    }
+
+    &.slide-up {
+      animation-name: slideOutUp;
+    }
+
+    &.avail-msg {
+      left: 50%;
+      width: auto;
+      transform: translate3d(-50%, -55px, 0);
+      white-space: nowrap;
+
+      &.slide-down {
+        transform: translate3d(-50%, -25px, 0);
+      }
+    }
+  }
+
+  //#region breakpoints
+  @media only screen and ($breakpoint-xs) {
+
+  }
+
+  @media only screen and ($breakpoint-sm) {
+
+  }
+
+  @media only screen and ($breakpoint-md) {
+
+  }
+
+  @media only screen and ($breakpoint-lg) {
+
+  }
+  //#endregion
+}

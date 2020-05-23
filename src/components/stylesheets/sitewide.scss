@@ -1,35 +1,15 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700,900|Ubuntu:200,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-html {
-  height: 100%;
-}
 
+
+//#region COMPONENT_DIRECTORY SPECIFIC
 body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  width: 100% !important;
-  min-width: 100% !important;
-  height: 100%;
-  background-color: $dark-gray;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: $brand-off-white;
 
   .App {
 
-    .routes {
-      padding: 0;
-      margin-top: 50px;
-      width: 100% !important;
-    }
-
-    .navbar.navbar-default {
-      margin-bottom: 0;
-    }
-
     .component-container {
-      margin-bottom: 100px;
+      margin: 100px 200px;
 
       h1 {
         margin-bottom: 20px;
@@ -57,6 +37,53 @@ body {
         }
       }
     }
+
+    .ParallaxBannerPage {
+      height: 140vh;
+      margin-top: 200px;
+    }
+
+    .side-navbar {
+      .bm-menu {
+        height: $vh-less-nav !important;
+      }
+    }
+  }
+}
+//#endregion
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  margin: 0;
+  width: 100% !important;
+  min-width: 100% !important;
+  height: 100%;
+  background-color: $dark-gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $brand-off-white;
+
+  #root {
+    height: 100%;
+  }
+
+  .App {
+    height: 100%;
+
+    .routes {
+      padding: 0;
+      margin-top: 50px;
+      width: 100% !important;
+    }
+
+    .navbar.navbar-default {
+      margin-bottom: 0;
+    }
+
   }
 
   .scroll-up > div {
@@ -67,6 +94,7 @@ body {
     font-size: 2.5rem;
     z-index: 9; //falls behind some elements here and there
   }
+
 
   //#region text/fonts
   .title,
@@ -173,8 +201,33 @@ body {
       outline: none !important;
     }
   }
+
+  input,
+  textarea,
+  select {
+    background-color: $med-gray !important;
+    color: $brand-off-white !important;
+    border-radius: unset !important;
+    border: none !important;
+    height: 40px;
+  }
+
+  label.pink {
+    background: $magenta;
+    font-size: 12px;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+  }
   //#endregion
 
+  //#region padding/width
   .pad-section-lg {
     padding: 0 150px;
   }
@@ -196,17 +249,54 @@ body {
     width: 50vw;
     margin: 0 auto;
   }
+  //#endregion
 
 
   button {
     background: $brand-white;
-    border-radius: 10px 4px !important;
+    //border-radius: 10px 4px !important;
+    border-radius: unset !important;
     text-transform: uppercase;
     outline: none !important;
+    font-weight: bold !important;
+    padding: 15px !important;
+
+    &.underline-btn {
+      margin: 2px 15px;
+      color: $brand-off-white;
+      font-size: 14px;
+      border: none;
+      border-bottom: solid 1px $brand-off-white;
+      border-radius: unset !important;
+      padding: 0 !important;
+      padding-bottom: 5px;
+      background: transparent;
+
+      &:hover,
+      &:active,
+      &:focus,
+      &:active:focus,
+      &:visited {
+        border-color: #333;
+        background: transparent !important;
+      }
+
+
+      &.active {
+        background: transparent;
+        border-color: $magenta;
+        color: $magenta;
+      }
+
+
+      &:first-child {
+        margin-left: 20px;
+      }
+    }
 
     &.popup {
       display: inline-block;
-      padding: 20px 30px;
+      padding: 20px 30px !important;
       box-shadow: 0 17px 10px -10px rgba(0,0,0,0.4);
       transition: transform ease-in-out 300ms, box-shadow ease-in-out 300ms;
 
@@ -217,17 +307,17 @@ body {
     }
 
     &.btn-lg {
-      padding: 12px 18px;
+      padding: 12px 18px !important;
       font-size: $font-md;
     }
 
     &.btn-md {
-      padding: 12px 18px;
+      padding: 12px 18px !important;
       font-size: $font-xs;
     }
 
     &.btn-sm {
-      padding: 12px 18px;
+      padding: 12px 18px !important;
       font-size: $font-xxs;
     }
 
@@ -239,28 +329,127 @@ body {
     }
 
     //#region colors
-    &.blue-btn {
+    &.btn-success {
+      background: linear-gradient(to right, $success-dark, $success-light);
+      color: $brand-white;
+      border: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $success-dark;
+        background: linear-gradient(to right, $brand-white, $brand-white);
+        border: none;
+      }
+
+      &.invert {
+        background: linear-gradient(to right, $brand-white, $brand-white);
+        color: $success-dark;
+        border: none;
+
+        &:hover {
+          color: $brand-white;
+          background: linear-gradient(to right, $success-dark, $success-light);
+          border: none;
+        }
+      }
+    }
+
+    &.btn-info {
+      background: linear-gradient(to right, $info-dark, $info-light);
+      color: $brand-white;
+      border: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $info-dark;
+        background: linear-gradient(to right, $brand-white, $brand-white);;
+        border: none;
+      }
+
+      &.invert {
+        background: linear-gradient(to right, $brand-white, $brand-white);;
+        color: $info-dark;
+        border: none;
+
+        &:hover {
+          color: $brand-white;
+          background: linear-gradient(to right, $info-dark, $info-light);
+          border: none;
+        }
+      }
+    }
+
+    &.btn-warning {
+      background: linear-gradient(to right, $warning-dark, $warning-light);
+      color: $brand-white;
+      border: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $warning-dark;
+        background: linear-gradient(to right, $brand-white, $brand-white);;
+        border: none;
+      }
+
+      &.invert {
+        background: linear-gradient(to right, $brand-white, $brand-white);;
+        color: $warning-dark;
+        border: none;
+
+        &:hover {
+          color: $brand-white;
+          background: linear-gradient(to right, $warning-dark, $warning-light);
+          border: none;
+        }
+      }
+    }
+
+    &.btn-danger {
+      background: linear-gradient(to right, $danger-dark, $danger-light);
+      color: $brand-white;
+      border: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $danger-dark;
+        background: linear-gradient(to right, $brand-white, $brand-white);;
+        border: none;
+      }
+
+      &.invert {
+        background: linear-gradient(to right, $brand-white, $brand-white);;
+        color: $danger-dark;
+        border: none;
+
+        &:hover {
+          color: $brand-white;
+          background: linear-gradient(to right, $danger-dark, $danger-light);
+          border: none;
+        }
+      }
+    }
+
+    &.blue-dark-btn {
       background: $dark-blue;
       color: $brand-white;
-      border: solid 1px $brand-white !important;
+      border: none;
       font-weight: bold;
 
       &:hover {
         color: $dark-blue;
         background: $brand-white;
-        border: solid 1px $dark-blue !important;
+        border: none;
       }
-
 
       &.invert {
         background: $brand-white;
         color: $dark-blue;
-        border: solid 1px $dark-blue !important;
+        border: none;
 
         &:hover {
           color: $brand-white;
           background: $dark-blue;
-          border: solid 1px $brand-white !important;
+          border: none;
         }
       }
     }
@@ -268,129 +457,155 @@ body {
     &.blue-light-btn {
       background: $light-blue;
       color: $brand-white;
-      border: solid 1px $brand-white !important;
+      border: none;
       font-weight: bold;
 
       &:hover {
         color: $light-blue;
         background: $brand-white;
-        border: solid 1px $light-blue !important;
+        border: none;
       }
 
 
       &.invert {
         background: $brand-white;
         color: $light-blue;
-        border: solid 1px $light-blue !important;
+        border: none;
 
         &:hover {
           color: $brand-white;
           background: $light-blue;
-          border: solid 1px $brand-white !important;
+          border: none;
         }
       }
     }
 
-    &.purple-btn {
+    &.purple-light-btn {
       background: $light-purple;
       color: $brand-white;
-      border: solid 1px $brand-white !important;
+      border: none;
       font-weight: bold;
 
       &:hover {
         color: $light-purple;
         background: $brand-white;
-        border: solid 1px $light-purple !important;
+        border: none;
       }
 
 
       &.invert {
         background: $brand-white;
         color: $light-purple;
-        border: solid 1px $light-purple !important;
+        border: none;
 
         &:hover {
           color: $brand-white;
           background: $light-purple;
-          border: solid 1px $brand-white !important;
+          border: none;
         }
       }
     }
 
-    &.dark-purple-btn {
+    &.purple-dark-btn {
       background: $dark-purple;
       color: $brand-white;
-      border: solid 1px $brand-white !important;
+      border: none;
       font-weight: bold;
 
       &:hover {
         color: $dark-purple;
         background: $brand-white;
-        border: solid 1px $dark-purple !important;
+        border: none;
       }
 
 
       &.invert {
         background: $brand-white;
         color: $dark-purple;
-        border: solid 1px $dark-purple !important;
+        border: none;
 
         &:hover {
           color: $brand-white;
           background: $dark-purple;
-          border: solid 1px $brand-white !important;
+          border: none;
         }
       }
     }
 
-    &.pink-btn {
+    &.pink-light-btn {
       background: $light-pink;
       color: $brand-white;
-      border: solid 1px $brand-white !important;
+      border: none;
       font-weight: bold;
 
       &:hover {
         color: $light-pink;
         background: $brand-white;
-        border: solid 1px $light-pink !important;
+        border: none;
       }
 
 
       &.invert {
         background: $brand-white;
         color: $light-pink;
-        border: solid 1px $light-pink !important;
+        border: none;
 
         &:hover {
           color: $brand-white;
           background: $light-pink;
-          border: solid 1px $brand-white !important;
+          border: none;
         }
       }
     }
 
-    &.dark-pink-btn {
+    &.pink-dark-btn {
       background: $dark-pink;
       color: $brand-white;
-      border: solid 1px $brand-white !important;
+      border: none;
       font-weight: bold;
 
       &:hover {
         color: $dark-pink;
         background: $brand-white;
-        border: solid 1px $dark-pink !important;
+        border: none;
       }
 
 
       &.invert {
         background: $brand-white;
         color: $dark-pink;
-        border: solid 1px $dark-pink !important;
+        border: none;
 
         &:hover {
           color: $brand-white;
           background: $dark-pink;
-          border: solid 1px $brand-white !important;
+          border: none;
+        }
+      }
+    }
+
+    &.magenta-btn {
+      background: $magenta;
+      color: $brand-white;
+      border: none;
+      font-weight: bold;
+
+      &:hover {
+        color: $magenta;
+        background: $brand-white;
+        border: none;
+      }
+
+
+      &.invert {
+        background: $brand-white;
+        color: $magenta;
+        border: none;
+
+        &:hover {
+          color: $brand-white;
+          background: $magenta;
+          border: none;
         }
       }
     }
@@ -421,8 +636,159 @@ body {
     }
   }
 
+  //#region datepicker overrides
+  .react-datepicker-wrapper,
+  .react-datepicker-popper {
+    z-index: 1;
+    //border-radius: 10px 4px;
+    //background: $brand-off-white;
+    //border: none;
+    //height: 40px;
 
+    input,
+    textarea,
+    select {
+      background: transparent;
+      //border: none;
 
+      &:focus {
+        border: none;
+      }
+    }
+
+    .react-datepicker,
+    .react-datepicker__current-month,
+    .react-datepicker-time__header,
+    .react-datepicker__time-list,
+    .react-datepicker__day-names,
+    .react-datepicker__header--time,
+    .react-datepicker__header {
+      //font-size: 1.5rem;
+      background-color: $light-gray;
+    }
+
+    .react-datepicker__day:hover,
+    .react-datepicker__time-list-item:hover {
+      background-color: $magenta !important;
+    }
+
+    .react-datepicker__input-container input {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .react-datepicker__day-name,
+    .react-datepicker__day,
+    .react-datepicker__time-name,
+    .react-datepicker__current-month,
+    .react-datepicker__time-container,
+    .react-datepicker-time__header {
+      //width: 2.8rem;
+      //padding: 4px 6px;
+      text-align: center;
+      color: $brand-off-white;
+    }
+
+    .react-datepicker-time__header {
+      text-transform: capitalize;
+    }
+
+    .react-datepicker__time-container {
+      //width: 105px;
+    }
+
+    .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+      width: auto;
+    }
+
+    .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled {
+      display: none;
+    }
+
+    .react-datepicker__navigation--previous {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid;
+      text-indent: -9999px;
+      border-radius: unset !important;
+    }
+
+    .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid;
+      text-indent: -9999px;
+      right: 90px;
+      border-radius: unset !important;
+      padding: 0 !important;
+      color: $brand-off-white;
+    }
+
+    .react-datepicker__navigation--previous, body .react-datepicker-popper .react-datepicker__navigation--previous {
+      padding: 0 !important;
+      color: $brand-off-white;
+    }
+
+    .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range {
+      background-color: $magenta;
+    }
+
+  }
+  //#endregion
+
+  .nav-tabs {
+    border-color: $light-blue;
+
+    a.nav-link {
+      color: $light-gray;
+      transition: border 0.2s ease-in;
+      text-transform: capitalize;
+
+      &.active {
+        background-color: $med-gray;
+        color: $light-blue;
+        border-color: $light-blue;
+        border-bottom-color: transparent;
+        font-weight: bold;
+
+        &:hover {
+          background-color: $med-gray;
+          border-color: $light-blue;
+          border-bottom-color: transparent;
+        }
+      }
+
+      &:hover {
+        background-color: inherit;
+        border-color: $light-gray;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  //#region customs crollbar
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $light-gray;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $med-gray;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $med-gray;
+  }
+  //#endregion
+
+  //#region mobile
   @media only screen and ($breakpoint-xs) {
     .title,
     .title p {
@@ -457,17 +823,17 @@ body {
 
       &.btn-lg {
         padding: 12px 18px;
-        font-size: $font-xxs;
+        font-size: $font-xs;
       }
 
       &.btn-md {
         padding: 12px 18px;
-        font-size: $font-xxs;
+        font-size: $font-xs;
       }
 
-      &.btn-sm {
+      &.btn-small {
         padding: 12px 18px;
-        font-size: $font-xxs;
+        font-size: $font-xs;
       }
     }
 
@@ -486,17 +852,17 @@ body {
 
       &.btn-lg {
         padding: 12px 18px;
-        font-size: $font-xs;
+        font-size: $font-sm;
       }
 
       &.btn-md {
         padding: 12px 18px;
-        font-size: $font-xs;
+        font-size: $font-sm;
       }
 
-      &.btn-sm {
+      &.btn-small {
         padding: 12px 18px;
-        font-size: $font-xxs;
+        font-size: $font-xs;
       }
     }
 
@@ -519,17 +885,17 @@ body {
 
       &.btn-lg {
         padding: 12px 18px;
-        font-size: $font-sm;
+        font-size: $font-md;
       }
 
       &.btn-md {
         padding: 12px 18px;
-        font-size: $font-xs;
+        font-size: $font-sm;
       }
 
-      &.btn-sm {
+      &.btn-small {
         padding: 12px 18px;
-        font-size: $font-xxs;
+        font-size: $font-xs;
       }
     }
 
@@ -579,5 +945,6 @@ body {
 
 
   }
+  //#endregion
 
 }

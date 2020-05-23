@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import autoBind from 'react-autobind';
 import './InputField.scss';
 import { FormControl, FormGroup } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class InputField extends React.Component {
   constructor(props) {
@@ -43,12 +44,21 @@ class InputField extends React.Component {
 			  <FormGroup controlId={this.props.controlId}>
 				<FormControl type={this.props.type}
 							 placeholder={this.props.placeholder}
-							 className={this.props.class}
-							 value={this.props.value}
-							 onChange={(e) => this.handleValidation(this.props.property, e)}/>
+							 className={`${this.props.class} ${this.props.sideIcon ? 'side-icon' : ''}`}
+							 value={this.props.value || ''}
+							 onChange={this.props.handleChange ? (e) => this.props.handleChange(e) : (e) => this.handleValidation(this.props.property, e)}/>
+
+
+				{this.props.sideIcon &&
+				<FontAwesomeIcon icon={this.props.sideIcon} title={this.props.placeholder} />
+				}
+
+				{this.props.errorMessage &&
 				<div className={`error-message ${this.props.error === true ? 'slide-down' : ''}`}>
 				  {this.props.errorMessage}
 				</div>
+				}
+
 			  </FormGroup>
 			</div>
 	)
@@ -62,12 +72,13 @@ InputField.propTypes = {
   type: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   class: PropTypes.string.isRequired,
-  value: PropTypes.object.isRequired,
+  value: PropTypes.object,
   handleChange: PropTypes.func.isRequired,
-  property: PropTypes.string.isRequired,
+  property: PropTypes.string,
   error: PropTypes.bool.isRequired,
-  errorMessage: PropTypes.string.isRequired,
-  validateAs: PropTypes.string.isRequired,
+  errorMessage: PropTypes.string,
+  validateAs: PropTypes.string,
+  sideIcon: PropTypes.object
 };
 
 export default InputField;

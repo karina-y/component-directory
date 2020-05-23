@@ -53,9 +53,18 @@
     padding: 25px;
   }
 
-  .text {
-    box-shadow: 0 3px 6px rgba(65, 4, 62, 0.16), 0 3px 6px rgba(65, 4, 62, 0.23);
+  .ShadowBox {
+    width: 100%;
+    font-size: $font-sm;
   }
+
+  //.text {
+  //  padding: 60px 30px;
+  //  background: $brand-white;
+  //  border-radius: 5px;
+  //  box-shadow: 0 3px 6px rgba(217, 77, 129, 0.16), 0 3px 6px rgba(217, 77, 129, 0.23);
+  //  color: $magenta;
+  //}
 
 
   //#region breakpoints

@@ -47,7 +47,7 @@ class TwoColumnText extends React.Component {
 }
 
 /*  ACCEPTABLE PROP VALUES
-	leftItem/rightItem:         a string defining the type sending over, can be either "image" or "text" ONLY. if adding new types please update this comment.
+	leftContent/rightContent:   a string or html of text
 	additionalOuterClasses:		any extra classes you wanna add so you can add new styles
  */
 

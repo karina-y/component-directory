@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import autoBind from 'react-autobind';
 import './ImageHover.scss';
 import ColorEnums from '../../utils/colors';
-import Fade from 'react-reveal/Fade';
 
 const COLOR_ENUMS = ColorEnums.COLOR_ENUMS;
 

@@ -1,0 +1,183 @@
+@import '../stylesheets/variables.scss';
+
+.ViewAllItems {
+
+  & > div.show {
+    display: flow-root !important;
+  }
+
+  .post-title span {
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .post-filter {
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 0 20px;
+
+    &.right {
+      .fa-chevron-left {
+        color: $brand-off-white;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: $light-gray;
+        }
+      }
+
+      & > button {
+        transform: translateX(-100px);
+      }
+    }
+
+    &.left {
+      .fa-chevron-right {
+        color: $brand-off-white;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: $light-gray;
+        }
+      }
+
+      & > button {
+        transform: translateX(0);
+      }
+    }
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+      position: absolute;
+      top: 0;
+      color: $light-gray;
+      width: 50px;
+      background: $dark-gray;
+      height: 100%;
+      padding: 15px 0;
+      cursor: pointer;
+      z-index: 9;
+    }
+
+    .fa-chevron-left {
+      left: -16px;
+    }
+
+    .fa-chevron-right {
+      right: -16px;
+    }
+
+  }
+
+  .post-search {
+    margin-bottom: 60px;
+    position: relative;
+
+    .search-bar {
+      border-radius: unset !important;
+    }
+  }
+
+  .post-summary {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px $light-gray;
+
+
+    .status-badge {
+      padding: 2px 15px;
+      width: fit-content;
+      font-weight: bold;
+      vertical-align: middle;
+      border-radius: 2px;
+      font-size: .8em;
+      color: $light-gray;
+      margin-bottom: 20px;
+
+      &.success {
+        //background: $success;
+        background: linear-gradient(to right, $success-dark, $success-light);
+
+      }
+
+      &.primary {
+        background: linear-gradient(to right, $info-dark, $info-light);
+      }
+
+      &.warning {
+        //background: $warning;
+        background: linear-gradient(to right, $warning-dark, $warning-light);
+      }
+
+      &.danger {
+        //background: $danger;
+        background: linear-gradient(to right, $danger-dark, $danger-light);
+      }
+
+
+    }
+  }
+
+  .icons {
+    float: right;
+
+    svg {
+      display: block;
+      font-size: $font-xs;
+      margin: 10px 0;
+      cursor: pointer;
+      opacity: .7;
+      transition: opacity 500ms;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.fa-pencil-alt {
+        color: $warning;
+      }
+
+      &.fa-trash {
+        color: $danger;
+      }
+
+      &.fa-eye {
+        color: $success;
+      }
+
+      &.fa-eye-slash {
+        color: $danger;
+      }
+    }
+  }
+
+  .AccordionPanel {
+    label {
+      width: 95%;
+    }
+  }
+
+  //#region breakpoints
+  @media only screen and ($breakpoint-xs) {
+
+  }
+
+  @media only screen and ($breakpoint-sm) {
+
+  }
+
+  @media only screen and ($breakpoint-md) {
+
+  }
+
+  @media only screen and ($breakpoint-lg) {
+
+  }
+  //#endregion
+}

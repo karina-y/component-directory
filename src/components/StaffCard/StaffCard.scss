@@ -1,0 +1,106 @@
+
+@import '../stylesheets/variables.scss';
+
+.StaffCard {
+  //display: flex;
+  //flex-wrap: wrap;
+  //justify-content: center;
+  //align-items: center;
+  padding: 40px;
+  text-align: center;
+
+  .staff-card {
+    padding: 30px;
+    background: $med-gray;
+    margin: 30px 50px;
+    //flex-basis: 25%;
+    width: 370px;
+    display: inline-block;
+    color: $brand-off-white;
+    text-align: left;
+
+    &.level-two {
+      box-shadow: 0 3px 6px rgba(60, 65, 97,0.16), 0 3px 6px rgba(60, 65, 97,0.23);
+    }
+
+    .profile {
+      margin-bottom: 40px;
+      border-bottom: solid 1px $dark-gray;
+      padding-bottom: 55px;
+
+      .profile-photo {
+        display: inline;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 30px;
+
+        img {
+          object-fit: cover;
+          object-position: center;
+          width: inherit;
+          height: inherit;
+          border-radius: 100%;
+          border-bottom-left-radius: 5%;
+        }
+      }
+    }
+
+    .label-default {
+      //margin-right: 15px;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 23px;
+      padding-top: 20px;
+    }
+
+    .job-title {
+      //font-size: 1em;
+    }
+
+    .contact {
+      p {
+        font-size: 17.5px;
+      }
+
+      svg {
+        color: $magenta;
+        margin-right: 10px;
+      }
+    }
+  }
+
+
+
+  //#region breakpoints
+  @media only screen and ($breakpoint-xxs) {
+
+  }
+
+  @media only screen and ($breakpoint-xs) {
+
+  }
+
+  @media only screen and ($breakpoint-sm) {
+
+  }
+
+  @media only screen and ($breakpoint-md) {
+
+  }
+
+  @media only screen and ($breakpoint-lg) {
+
+  }
+
+  @media only screen and ($breakpoint-xl) {
+
+  }
+
+  @media only screen and ($breakpoint-xxl) {
+
+  }
+  //#endregion
+}

@@ -76,12 +76,7 @@ class ImageCarousel extends React.Component {
 							return (
 									<Carousel.Item key={index}>
 
-									  {item.image === "/images/facilities/11" ?
-											  <ResponsiveImage image={item.image} imageAlt="image alt" additionalOuterClasses={`slide-${index} image obj-pos-bottom`}/>
-											  :
-											  <ResponsiveImage image={item.image} imageAlt="image alt" additionalOuterClasses={`slide-${index} image`}/>
-									  }
-
+									  <ResponsiveImage image={item.image} imageAlt="image alt" additionalOuterClasses={`slide-${index} image`}/>
 
 									  <Carousel.Caption>
 										{item.title ? <h5>{item.title}</h5> : ''}
@@ -193,7 +188,6 @@ ImageCarousel.propTypes = {
   grid: PropTypes.bool.isRequired,	//pick just grid or modal, not both
   modal: PropTypes.bool.isRequired,
   images: PropTypes.array.isRequired,
-  autoplay: PropTypes.bool,
   id: PropTypes.string.isRequired
 };
 

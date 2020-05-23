@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './TwoColumnPopup.scss';
-import { Grid } from 'react-bootstrap'
+import { Container, Grid } from 'react-bootstrap'
 import Fade from 'react-reveal/Fade';
 
 class TwoColumnPopup extends React.Component {
@@ -19,7 +19,7 @@ class TwoColumnPopup extends React.Component {
 	const additionalOuterClasses = this.props.additionalOuterClasses ? this.props.additionalOuterClasses : '';
 
 	return (
-			<Grid className={`TwoColumnPopup ${additionalOuterClasses}`}>
+			<Container className={`TwoColumnPopup ${additionalOuterClasses}`}>
 			  {this.props.leftItem === "image" ?
 					  <Fade up={true}
 							duration={this.props.imageDuration}
@@ -54,7 +54,7 @@ class TwoColumnPopup extends React.Component {
 						</div>
 					  </Fade>
 			  }
-			</Grid>
+			</Container>
 	)
   }
 }

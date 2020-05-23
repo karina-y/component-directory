@@ -23,14 +23,14 @@ const quoteData = [
 
 
 const QuoteCardPage = props => (
-		<Container className="QuoteCardPage">
+		<div className="QuoteCardPage">
 		  <div className="component-container" id="quotecard">
 			<h1>QuoteCard</h1>
 
 			<QuoteCard data={quoteData}/>
 
 		  </div>
-		</Container>
+		</div>
 );
 
 QuoteCardPage.defaultProps = {

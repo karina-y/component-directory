@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import InputField from '../components/InputField/InputField'
+import InputField from '../components/InputField/InputField';
 
 const InputFieldPage = props => (
-		<Container className="InputFieldPage">
+		<div className="InputFieldPage">
 		  <div className="component-container" id="accordion">
 			<h1>InputFieldPage</h1>
 			<InputField controlId="titleField"
@@ -14,16 +14,9 @@ const InputFieldPage = props => (
 						validateAs="string"
 						property={}
 						error={}
-						errorMessage={}
+						errorMessage={} />
 		  </div>
-		</Container>
-);
-
-InputFieldPage.defaultProps = {
-
-};
-
-InputFieldPage.propTypes = {
-};
+		</div>
+)
 
 export default InputFieldPage;

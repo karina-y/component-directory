@@ -2,7 +2,7 @@
 
 .TwoColumnFade {
   width: 100%;
-  height: auto;
+  height: 80vh;
   position: relative;
   overflow: hidden;
 
@@ -14,23 +14,41 @@
 
     &.image {
       height: 100%;
+      width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
       z-index: -1;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
     }
   }
 
-  .left {
+  .text {
     width: 70%;
-    padding-left: 20%;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1));
+    //background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1));
     z-index: 1;
     display: flex;
     align-items: center;
-    text-align: left;
+    font-size: $font-lg;
+    font-weight: bold;
+    color: $magenta;
+
+    &.right {
+      float: right;
+      text-align: right;
+      padding-right: 5%;
+      justify-content: flex-end;
+    }
+
+    &.left {
+      float: left;
+      text-align: left;
+      padding-left: 5%;
+    }
 
     & > div {
       width: 50%;
@@ -40,13 +58,9 @@
   }
 
   .right {
-    height: 100%;
-    right: 0;
-    width: 80%;
-    //width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    &.image {
+
+    }
   }
 
   .title {
@@ -70,16 +84,6 @@
 
   //#region breakpoints
   @media only screen and ($breakpoint-xxs) {
-    .dave-pod {
-      background-image: linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(/images/dave-pod_350.jpg);
-      background-position: center center
-    }
-
-    .neurons-light {
-      background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1)), url('/images/stock/neurons-light_350.jpg');
-      background-position: center center;
-    }
-
   }
 
   @media only screen and ($breakpoint-xs) {
@@ -100,16 +104,6 @@
       background-attachment: unset;
     }
 
-    .dave-pod {
-      background-image: linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(/images/dave-pod_768.jpg);
-      background-position: center center
-    }
-
-    .neurons-light {
-      background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1)), url('/images/stock/neurons-light_768.jpg');
-      background-position: center center;
-    }
-
   }
 
   @media only screen and ($breakpoint-sm) {
@@ -117,16 +111,6 @@
     .left {
       padding-left: 10%;
       width: 100%;
-    }
-
-    .dave-pod {
-      background-image: linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(/images/dave-pod_992.jpg);
-      background-position: 230px 22%;
-    }
-
-    .neurons-light {
-      background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1)), url('/images/stock/neurons-light_992.jpg');
-      background-position: center center;
     }
 
   }
@@ -141,17 +125,6 @@
         width: 65%;
       }
     }
-
-    .dave-pod {
-      background-image: linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(/images/dave-pod_1280.jpg);
-      background-position: 285px 22%;
-    }
-
-    .neurons-light {
-      background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1)), url('/images/stock/neurons-light_1280.jpg');
-      background-position: center center;
-    }
-
   }
 
   @media only screen and ($breakpoint-lg) {
@@ -164,40 +137,13 @@
       }
     }
 
-    .dave-pod {
-      background-image: linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(/images/dave-pod_1440.jpg);
-      background-position: 285px 22%;
-    }
-
-    .neurons-light {
-      background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1)), url('/images/stock/neurons-light_1440.jpg');
-      background-position: center center;
-    }
   }
 
   @media only screen and ($breakpoint-xl) {
-    .dave-pod {
-      background-image: linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(/images/dave-pod_1920.jpg);
-      background-position: 285px 22%;
-    }
 
-    .neurons-light {
-      background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1)), url('/images/stock/neurons-light_1920.jpg');
-      background-position: center center;
-    }
   }
 
   @media only screen and ($breakpoint-xxl) {
-
-    .dave-pod {
-      background-image: linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(/images/dave-pod_3200.jpg);
-      background-position: 285px 22%;
-    }
-
-    .neurons-light {
-      background-image: linear-gradient(-130deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.9), rgba(255,255,255,1) , rgba(255,255,255,1)), url('/images/stock/neurons-light_3200.jpg');
-      background-position: center center;
-    }
   }
   //#endregion
 

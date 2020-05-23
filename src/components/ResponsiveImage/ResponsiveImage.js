@@ -18,11 +18,11 @@ class ResponsiveImage extends React.Component {
   // }
 
   render() {
-	const small = `${this.props.image}_350.jpg`;
-	const medium = `${this.props.image}_768.jpg`;
-	const large = `${this.props.image}_1280.jpg`;
-	const xlarge = `${this.props.image}_3200.jpg`;
-	const xxlarge = `${this.props.image}_4000.jpg`;
+	const small = `/images/${this.props.image}_350.jpg`;
+	const medium = `/images/${this.props.image}_768.jpg`;
+	const large = `/images/${this.props.image}_1280.jpg`;
+	const xlarge = `/images/${this.props.image}_3200.jpg`;
+	const xxlarge = `/images/${this.props.image}_4000.jpg`;
 
 
 	return (

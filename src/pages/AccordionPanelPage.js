@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 
 
 const AccordionPanelPage = props => (
-		<Container className="AccordionPanelPage">
+		<div className="AccordionPanelPage">
 
 		  <div className="component-container" id="accordion">
 			<h1>AccordionPanelPage</h1>
@@ -12,7 +12,7 @@ const AccordionPanelPage = props => (
 		  </div>
 
 
-		</Container>
+		</div>
 );
 
 AccordionPanelPage.defaultProps = {

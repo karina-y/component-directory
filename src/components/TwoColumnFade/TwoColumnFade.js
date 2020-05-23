@@ -30,26 +30,28 @@ class TwoColumnFade extends React.Component {
 
 
 			  {this.props.leftItem === "image" ?
-					  <div className={`left ${this.props.leftItem} ${this.props.leftContent}`}>
+					  <div className="left image"
+						   style={{backgroundImage: `linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, .7), rgba(255, 255, 255, 0.1), rgba(255,255,255,0), rgba(255,255,255,0)), url(${this.props.leftContent})`}}>
 					  </div>
 					  :
 					  <Fade left={true}
 							duration={1000}
 							delay={100}>
-						<div className={`left ${this.props.leftItem}`}>
+						<div className="left text">
 						  {this.props.leftContent}
 						</div>
 					  </Fade>
 			  }
 
-			  {this.props.rightItem === "image" ?
-					  <div className={`right ${this.props.rightItem} ${this.props.rightContent}`}>
+			  {this.props.leftItem === "text" ?
+					  <div className="right image"
+						   style={{backgroundImage: `linear-gradient(-130deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.7), rgba(255,255,255,1), rgba(255,255,255,1)), url(${this.props.rightContent})`}}>
 					  </div>
 					  :
 					  <Fade right={true}
 							duration={1000}
 							delay={100}>
-						<div className={`right ${this.props.rightItem}`}>
+						<div className="right text">
 						  {this.props.rightContent}
 						</div>
 					  </Fade>

@@ -4,18 +4,18 @@ import ParallaxBanner from '../components/ParallaxBanner/ParallaxBanner'
 
 
 const ParallaxBannerPage = props => (
-		<Container className="ParallaxBannerPage">
+		<div className="ParallaxBannerPage">
 		  <div className="component-container" id="parallaxbanner">
 			<h1>ParallaxBanner</h1>
 
-			<ParallaxBanner image="landscape_01"
-							buttonClasses="dark-pink-btn popup"
+			<ParallaxBanner image="badwater"
+							buttonClasses="pink-dark-btn popup"
 							navigateTo="#parallaxbanner"
 							buttonText="Parallax Banner"
 							buttonSize="large"
 							history={props.history} />
 		  </div>
-		</Container>
+		</div>
 );
 
 ParallaxBannerPage.defaultProps = {

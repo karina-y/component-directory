@@ -4,7 +4,7 @@ import ShadowBox from '../components/ShadowBox/ShadowBox'
 
 
 const ShadowBoxPage = props => (
-		<Container className="ShadowBoxPage">
+		<div className="ShadowBoxPage">
 		  <div className="component-container" id="shadowbox">
 			<h1>ShadowBox</h1>
 
@@ -25,7 +25,7 @@ const ShadowBoxPage = props => (
 			</Row>
 
 		  </div>
-		</Container>
+		</div>
 );
 
 ShadowBoxPage.defaultProps = {

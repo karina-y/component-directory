@@ -19,8 +19,6 @@
     position: absolute;
     z-index: -1;
     left: 0;
-
-    background-image: url('/images/landscape_01.jpeg');
   }
 
   .content {
@@ -37,8 +35,8 @@
       background-attachment: unset;
     }
 
-    .landscape {
-      background-image: url('/images/stock/landscape_350.jpg') !important;
+    .badwater {
+      background-image: url('/images/badwater_350.jpg') !important;
     }
 
   }
@@ -51,41 +49,41 @@
       background-attachment: unset;
     }
 
-    .landscape {
-      background-image: url('/images/stock/landscape_768.jpg');
+    .badwater {
+      background-image: url('/images/badwater_768.jpg');
     }
 
   }
 
   @media only screen and ($breakpoint-sm) {
-    .landscape {
-      background-image: url('/images/stock/landscape_992.jpg');
+    .badwater {
+      background-image: url('/images/badwater_992.jpg');
     }
 
   }
 
   @media only screen and ($breakpoint-md) {
-    .landscape {
-      background-image: url('/images/stock/landscape_1280.jpg');
+    .badwater {
+      background-image: url('/images/badwater_1280.jpg');
     }
 
   }
 
   @media only screen and ($breakpoint-lg) {
-    .landscape {
-      background-image: url('/images/stock/landscape_1440.jpg');
+    .badwater {
+      background-image: url('/images/badwater_1440.jpg');
     }
   }
 
   @media only screen and ($breakpoint-xl) {
-    .landscape {
-      background-image: url('/images/stock/landscape_1920.jpg');
+    .badwater {
+      background-image: url('/images/badwater_1920.jpg');
     }
   }
 
   @media only screen and ($breakpoint-xxl) {
-    .landscape {
-      background-image: url('/images/stock/landscape_3200.jpg');
+    .badwater {
+      background-image: url('/images/badwater_3200.jpg');
     }
   }
   //#endregion
